@@ -1,0 +1,37 @@
+<html>
+    <script>
+        // 0. Crea l'objecte Assignatura:
+        let Assignatura = {
+            ref: 'BBDD',
+            nom: 'Bases de Dades',
+            hores: 180,
+            UF: ['UF1','UF2','UF3','UF4'],
+            professor: 'Pep Parés',
+            alumnes: ['alu1','alu2','alu13','alu4','alu5']
+        }
+        // 1. Amb JavaScript, llista les propietats de l'objecte Assignatura.
+        console.log("Assignatura -> ",Assignatura)
+        /*  Con un for
+        for (var i in Assignatura) {
+            // Mostrar en el HTML
+            // document.writeln('<p>' + Assignatura[i] + '</p>');
+
+            // Mostrar por consola
+            console.log('<p>' + Assignatura[i] + '</p>');
+        }/*
+        /* 2. Amb JavaScript, esborra la propietat alumnes de l'objecte 
+           Assignatura. Printa l'objecte abans i després de l'esborrat.*/
+        delete Assignatura.alumnes
+        console.log("Updated object: ",Assignatura)
+        /* 3. Amb Javascript, digues la longitud de l'objecte 
+           (és a dir, el número de propietats que té).*/
+        let contador = 0
+           for (var i in Assignatura) {
+            contador+=1
+            console.log(contador)
+           }
+        console.log("La longitud del objeto Assignatura es de: ",contador)
+
+    </script>
+</html>
+
